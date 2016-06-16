@@ -23,7 +23,7 @@ public class KeyEventTest extends JFrame implements KeyListener
 	public KeyEventTest()
 	{
 		panel = new JPanel (new GridLayout(0,2));
-		panel.add(new JLabel("���ڸ� �Է��Ͻÿ� : "));
+		panel.add(new JLabel("문자를 입력하시오 : "));
 		field = new JTextField(10);
 		panel.add(field);
 		area = new JTextArea(3,30);
@@ -44,17 +44,17 @@ public class KeyEventTest extends JFrame implements KeyListener
 	
 	}
 	
-	public void keyTyped(KeyEvent e)
+	public void keyTyped(KeyEvent e)//키가 입력되면 호출
 	{
 		display(e, "key Typed      ");
 	}
-	public void keyPressed(KeyEvent e)
+	public void keyPressed(KeyEvent e)//키를 누르는 순간 호출
 	{
 		display(e, "key Pressed      ");
 
 	}
 
-	public void keyReleased(KeyEvent e)
+	public void keyReleased(KeyEvent e)//키에서 손을 떼는 순간 호출
 	{
 		display(e, "key Released      ");
 
@@ -67,6 +67,6 @@ public class KeyEventTest extends JFrame implements KeyListener
 		String modifiers = "Alt : "+ e.isAltDown() + "Ctrl :  "
 				+e.isControlDown() + "Shilft : " +e.isShiftDown();
 		
-		area.append(" " + s + "���� " + c + "(�ڵ� : " + KeyCode + ") " + modifiers + "\n");
+		area.append(" " + s + "문자 " + c + "(코드 : " + KeyCode + ") " + modifiers + "\n");
 	}
 }
