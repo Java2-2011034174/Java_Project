@@ -37,7 +37,7 @@ import javax.swing.JPanel;
 					img_x = e.getX();
 					img_y = e.getY();
 					repaint();
-				}
+				}//mousepressed 만 재정의 한다.
 			});
 		}
 		
