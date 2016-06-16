@@ -12,19 +12,20 @@ class YourFrame extends JFrame
 	{
 		this.setSize(300,200);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setTitle("ÀÌº¥Æ® ¿¹Á¦");
+		this.setTitle("ì´ë²¤íŠ¸ ì˜ˆì œ");
 
 		JPanel panel = new JPanel();
-		button = new JButton("¹öÆ°À» ´©¸£½Ã¿À");
-		label = new JLabel("¾ÆÁ÷ ¹öÆ°ÀÌ ´­·ÁÁöÁö ¾Ê¾Ò½À´Ï´Ù");
-		button.addActionListener(new ActionListener()
+		button = new JButton("ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œì˜¤");
+		label = new JLabel("ì•„ì§ ë²„íŠ¼ì´ ëˆŒë ¤ì§€ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤");
+		button.addActionListener(new ActionListener() //ë¬´ëª… í´ë˜ìŠ¤ëŠ” ì•¡ì…˜ë¦¬ìŠ¤ë„ˆ ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„ë‹¨ë‹¤ ë¬´ëª…í´ë˜ìŠ¤ì˜ ê°ì²´ë„
+		//ë™ì‹œ ìƒì„±
 		{
-			public void actionPerformed(ActionEvent e)
+			public void actionPerformed(ActionEvent e)//ë¬´ëª…í´ë˜ìŠ¤ ì •ì˜. ì•¡ì…˜í¼í¼ë“œ() ë©”ì†Œë“œ êµ¬ì„±
 			{
 				if (e.getSource()==button)
 				
 				{
-					label.setText("¸¶Ä§³» ¹öÆ°ÀÌ ´­·¯Á³½À´Ï´Ù¾Æ¾Æ¾Æ.");
+					label.setText("ë§ˆì¹¨ë‚´ ë²„íŠ¼ì´ ëˆŒëŸ¬ì¡ŒìŠµë‹ˆë‹¤ì•„ì•„ì•„.");
 				}
 				
 			}
