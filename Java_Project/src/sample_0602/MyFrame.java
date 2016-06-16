@@ -1,4 +1,4 @@
-package sample_0602; // ���콺 �����
+package sample_0602; // ¸¶¿ì½º ¾î´ðÅÍ
 
 import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
@@ -21,7 +21,7 @@ import javax.swing.JPanel;
 		public MyPanel()
 		{
 			try {
-				img = ImageIO.read(new File("car.gif"));
+				img = ImageIO.read(new File("car.gif"));//패널에 마우스 리스너 추가. 무명클래스로 작성
 			} catch(IOException e)
 			{
 				System.out.println("no image");
