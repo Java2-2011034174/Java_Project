@@ -30,7 +30,7 @@ public class KeyEventTest extends JFrame implements KeyListener
 		add(panel, BorderLayout.NORTH);
 		add(area, BorderLayout.CENTER);
 
-		field.addKeyListener (this);
+		field.addKeyListener (this);//addkeylistener()메소드로 현재 객체를 이벤트 리스너로 추가
 		setTitle("KeyEvent Test");
 		setSize(400,200);
 		setVisible(true);
