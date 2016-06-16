@@ -17,7 +17,10 @@ import javax.swing.JPanel;
 	{
 		BufferedImage img = null;
 		int img_x = 0, img_y = 0;
-		
+		//밑의 2랑 비교. 이건 어댑터 클래스. 2는 리스너를 하나하나 구현. 원하는 건 한개인데도 인터페이스 때문에 할 수
+		//없이 구현해야함. 하지만 어댑터는 하나만 쓰면 됨
+		//리스너 - 인터페이스(implements) / 어댑터 - 클래스(extends)
+		//어댑터 장점 - 깔끔 편리 / 단점 - 동시 상속이 안되는 자바 특성상 내부 클래스로 정의해서 사용하는 것이 좋다
 		public MyPanel()
 		{
 			try {
